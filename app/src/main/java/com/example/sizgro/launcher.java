@@ -22,8 +22,9 @@ public class launcher extends AppCompatActivity {
             return insets;
         });
 
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        finish();
+        findViewById(R.id.main).postDelayed(() -> {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        }, 200);
     }
 }
