@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "894075335352",
+    "project_id": "sizgro-78cab",
+    "storage_bucket": "sizgro-78cab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894075335352:android:5a31432d217dfd3340fa4d",
+        "android_client_info": {
+          "package_name": "com.example.sizgro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMNrFPmWfE0HWYmsJtKjuJYuvc66x60kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
