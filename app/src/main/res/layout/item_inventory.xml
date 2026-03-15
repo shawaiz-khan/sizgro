@@ -5,20 +5,20 @@
     android:orientation="horizontal"
     android:background="@drawable/card_bg"
     android:padding="12dp"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/logo_color"
-        android:padding="8dp" />
+        android:padding="8dp" /> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_marginStart="12dp">
+        android:layout_marginStart="12dp"> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
         <TextView
             android:id="@+id/tvName"
@@ -27,7 +27,7 @@
             android:text="Product Name"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
         <TextView
             android:id="@+id/tvCategory"
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:text="Category"
             android:textColor="@color/text_secondary"
-            android:textSize="12sp" />
+            android:textSize="12sp" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
         <TextView
             android:id="@+id/tvPrice"
@@ -43,14 +43,14 @@
             android:layout_height="wrap_content"
             android:text="$10.00"
             android:textColor="@color/accent"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:textStyle="bold" /> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+    </LinearLayout> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <ImageView
         android:id="@+id/btnEdit"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@android:drawable/ic_menu_edit"
-        android:layout_marginEnd="8dp" />
+        android:layout_marginEnd="8dp" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
-</LinearLayout>
+</LinearLayout> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->

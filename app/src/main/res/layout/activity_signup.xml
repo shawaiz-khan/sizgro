@@ -5,14 +5,14 @@
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center_horizontal"
-    android:background="@color/white">
+    android:background="@color/white"> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:src="@drawable/logo_color"
         android:layout_marginTop="48dp"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="32dp" /> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,14 +21,14 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Join SizGro grocery community"
         android:textColor="@color/text_secondary"
-        android:layout_marginBottom="32dp" />
+        android:layout_marginBottom="32dp" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <EditText
         android:id="@+id/etEmail"
@@ -38,7 +38,7 @@
         android:inputType="textEmailAddress"
         android:padding="16dp"
         android:background="@drawable/edittext_bg"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <EditText
         android:id="@+id/etPassword"
@@ -48,14 +48,14 @@
         android:inputType="textPassword"
         android:padding="16dp"
         android:background="@drawable/edittext_bg"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Role"
         android:textColor="@color/text_secondary"
-        android:layout_marginBottom="4dp" />
+        android:layout_marginBottom="4dp" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <Spinner
         android:id="@+id/spinnerRole"
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:background="@drawable/edittext_bg"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="24dp" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <Button
         android:id="@+id/btnSignup"
@@ -73,7 +73,7 @@
         android:backgroundTint="@color/accent"
         android:textColor="@color/white"
         android:padding="16dp"
-        android:textAllCaps="false" />
+        android:textAllCaps="false" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <TextView
         android:id="@+id/tvLogin"
@@ -83,6 +83,6 @@
         android:textColor="@color/accent"
         android:textStyle="bold"
         android:layout_marginTop="16dp"
-        android:padding="8dp" />
+        android:padding="8dp" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
-</LinearLayout>
+</LinearLayout> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->

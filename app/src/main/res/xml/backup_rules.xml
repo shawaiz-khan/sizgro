@@ -4,10 +4,10 @@
    for details.
    Note: This file is ignored for devices older than API 31
    See https://developer.android.com/about/versions/12/backup-restore
--->
-<full-backup-content>
+--> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+<full-backup-content> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
     <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
-</full-backup-content>
+   <include domain="sharedpref" path="."/> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+   <exclude domain="sharedpref" path="device.xml"/> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
+--> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+</full-backup-content> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->

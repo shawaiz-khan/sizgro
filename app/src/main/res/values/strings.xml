@@ -1,3 +1,3 @@
-<resources>
-    <string name="app_name">SizGro</string>
-</resources>
+<resources> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
+    <string name="app_name">SizGro</string> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+</resources> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->

@@ -3,19 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/surface">
+    android:background="@color/surface"> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:background="@color/white"
-        android:padding="16dp">
+        android:padding="16dp"> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/logo_color"
-            android:layout_centerVertical="true" />
+            android:layout_centerVertical="true" /> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/accent"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true" /> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
 
         <TextView
             android:id="@+id/btnCart"
@@ -36,7 +36,7 @@
             android:layout_toStartOf="@id/btnLogout"
             android:layout_marginEnd="12dp"
             android:layout_centerVertical="true"
-            android:contentDescription="Cart" />
+            android:contentDescription="Cart" /> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
         <ImageView
             android:id="@+id/btnLogout"
@@ -45,8 +45,8 @@
             android:src="@android:drawable/ic_lock_power_off"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:contentDescription="Logout" />
-    </RelativeLayout>
+            android:contentDescription="Logout" /> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
+    </RelativeLayout> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <EditText
         android:id="@+id/etSearch"
@@ -58,7 +58,7 @@
         android:padding="12dp"
         android:layout_margin="12dp"
         android:background="@drawable/edittext_bg"
-        android:textSize="14sp" />
+        android:textSize="14sp" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <TextView
         android:id="@+id/tvEmpty"
@@ -68,7 +68,7 @@
         android:gravity="center"
         android:textSize="18sp"
         android:textColor="@color/text_secondary"
-        android:visibility="gone" />
+        android:visibility="gone" /> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
 
     <GridView
         android:id="@+id/gridViewProducts"
@@ -78,6 +78,6 @@
         android:padding="8dp"
         android:verticalSpacing="8dp"
         android:horizontalSpacing="8dp"
-        android:stretchMode="columnWidth" />
+        android:stretchMode="columnWidth" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
-</LinearLayout>
+</LinearLayout> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->

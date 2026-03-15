@@ -6,21 +6,21 @@
     android:background="@drawable/card_bg"
     android:layout_marginBottom="12dp"
     android:padding="12dp"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
     <ImageView
         android:id="@+id/ivCartProduct"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/logo_color"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside" /> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_marginStart="16dp">
+        android:layout_marginStart="16dp"> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
         <TextView
             android:id="@+id/tvCartProductName"
@@ -29,7 +29,7 @@
             android:text="Product Name"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="@color/black" /> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
         <TextView
             android:id="@+id/tvCartProductCategory"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:text="Category"
             android:textColor="@color/text_secondary"
-            android:textSize="12sp" />
+            android:textSize="12sp" /> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
 
         <TextView
             android:id="@+id/tvCartProductQty"
@@ -46,8 +46,8 @@
             android:text="Qty: 1"
             android:textColor="@color/black"
             android:textSize="14sp"
-            android:layout_marginTop="2dp" />
-    </LinearLayout>
+            android:layout_marginTop="2dp" /> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+    </LinearLayout> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
     <TextView
         android:id="@+id/tvCartProductPrice"
@@ -56,6 +56,6 @@
         android:text="$0.00"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:textColor="@color/accent" />
+        android:textColor="@color/accent" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
-</LinearLayout>
+</LinearLayout> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
     <!-- Accent (Green) -->
-    <color name="accent">#53B175</color>
+    <color name="accent">#53B175</color> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <!-- Text -->
-    <color name="text_primary">#1F1F1F</color>
-    <color name="text_secondary">#616161</color>
+    <color name="text_primary">#1F1F1F</color> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
+    <color name="text_secondary">#616161</color> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <!-- Backgrounds -->
-    <color name="surface">#F5F5F5</color>
-    <color name="white">#FFFFFF</color>
-    <color name="black">#212121</color>
-</resources>
+    <color name="surface">#F5F5F5</color> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+    <color name="white">#FFFFFF</color> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+    <color name="black">#212121</color> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
+</resources> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->

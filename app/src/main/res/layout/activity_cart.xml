@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/surface">
+    android:background="@color/surface"> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
     <LinearLayout
         android:id="@+id/cartHeader"
@@ -12,7 +12,7 @@
         android:orientation="horizontal"
         android:padding="16dp"
         android:gravity="center_vertical"
-        android:elevation="4dp">
+        android:elevation="4dp"> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
         <TextView
             android:id="@+id/btnBack"
@@ -21,7 +21,7 @@
             android:text="←"
             android:textSize="24sp"
             android:textColor="@color/accent"
-            android:padding="4dp" />
+            android:padding="4dp" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
         <TextView
             android:layout_width="match_parent"
@@ -31,8 +31,8 @@
             android:textStyle="bold"
             android:textColor="@color/black"
             android:gravity="center"
-            android:layout_marginEnd="32dp" />
-    </LinearLayout>
+            android:layout_marginEnd="32dp" /> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+    </LinearLayout> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <LinearLayout
         android:id="@+id/llEmptyCart"
@@ -42,14 +42,14 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="32dp"
-        android:visibility="gone">
+        android:visibility="gone"> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="🛒"
             android:textSize="64sp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp" /> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
             android:text="Your cart is empty"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="@color/black" /> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
             android:textSize="14sp"
             android:textColor="@color/text_secondary"
             android:gravity="center"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp" /> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
         <Button
             android:id="@+id/btnContinueShopping"
@@ -75,8 +75,8 @@
             android:text="Continue Shopping"
             android:backgroundTint="@color/accent"
             android:layout_marginTop="24dp"
-            android:textAllCaps="false" />
-    </LinearLayout>
+            android:textAllCaps="false" /> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+    </LinearLayout> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
     <LinearLayout
         android:id="@+id/llCartContent"
@@ -85,7 +85,7 @@
         android:layout_below="@id/cartHeader"
         android:layout_above="@id/bottomBar"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp" /> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
         <!-- We'll use a single item view for mock, or a ListView if you want multiple -->
         <ListView
@@ -103,9 +103,9 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:divider="@android:color/transparent"
-            android:dividerHeight="0dp" />
+            android:dividerHeight="0dp" /> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
 
-    </LinearLayout>
+    </LinearLayout> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <LinearLayout
         android:id="@+id/bottomBar"
@@ -115,18 +115,18 @@
         android:orientation="vertical"
         android:padding="16dp"
         android:background="@color/white"
-        android:elevation="8dp">
+        android:elevation="8dp"> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Estimated Total"
                 android:textSize="16sp"
-                android:textColor="@color/text_secondary" />
+                android:textColor="@color/text_secondary" /> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
             <TextView
                 android:id="@+id/tvCartTotal"
                 android:layout_width="wrap_content"
@@ -135,8 +135,8 @@
                 android:text="$0.00"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="@color/accent" />
-        </RelativeLayout>
+                android:textColor="@color/accent" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
+        </RelativeLayout> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
         <Button
             android:id="@+id/btnGoToCheckout"
@@ -145,8 +145,8 @@
             android:text="Go to Checkout"
             android:backgroundTint="@color/accent"
             android:padding="16dp"
-            android:textAllCaps="false" />
+            android:textAllCaps="false" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
-    </LinearLayout>
+    </LinearLayout> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
-</RelativeLayout>
+</RelativeLayout> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
