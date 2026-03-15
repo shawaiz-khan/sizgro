@@ -2,18 +2,18 @@
    Sample data extraction rules file; uncomment and customize as necessary.
    See https://developer.android.com/about/versions/12/backup-restore#xml-changes
    for details.
--->
-<data-extraction-rules>
-    <cloud-backup>
+--> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
+<data-extraction-rules> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+    <cloud-backup> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
         <!-- TODO: Use <include> and <exclude> to control what is backed up.
-        <include .../>
-        <exclude .../>
-        -->
-    </cloud-backup>
+        <include .../> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+        <exclude .../> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
+        --> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
+    </cloud-backup> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
     <!--
-    <device-transfer>
-        <include .../>
-        <exclude .../>
-    </device-transfer>
-    -->
-</data-extraction-rules>
+    <device-transfer> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
+        <include .../> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
+        <exclude .../> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
+    </device-transfer> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
+    --> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
+</data-extraction-rules> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->

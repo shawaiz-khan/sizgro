@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/surface">
+    android:background="@color/surface"> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
 
     <LinearLayout
         android:id="@+id/header"
@@ -11,7 +11,7 @@
         android:background="@color/white"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
         <TextView
             android:layout_width="0dp"
@@ -20,15 +20,15 @@
             android:text="Seller Panel"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/black" />
+            android:textColor="@color/black" /> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
         <ImageView
             android:id="@+id/btnLogout"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@android:drawable/ic_lock_power_off"
-            android:contentDescription="Logout" />
-    </LinearLayout>
+            android:contentDescription="Logout" /> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
+    </LinearLayout> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
 
     <TextView
         android:id="@+id/tvEmpty"
@@ -40,7 +40,7 @@
         android:padding="32dp"
         android:textSize="18sp"
         android:textColor="@color/text_secondary"
-        android:visibility="gone" />
+        android:visibility="gone" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
     <ListView
         android:id="@+id/listViewInventory"
@@ -49,7 +49,7 @@
         android:layout_below="@id/header"
         android:padding="8dp"
         android:divider="@android:color/transparent"
-        android:dividerHeight="8dp" />
+        android:dividerHeight="8dp" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
 
     <Button
         android:id="@+id/btnAddProduct"
@@ -63,6 +63,6 @@
         android:textColor="@color/white"
         android:textAllCaps="false"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp" />
+        android:paddingRight="24dp" /> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
 
-</RelativeLayout>
+</RelativeLayout> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->

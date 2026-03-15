@@ -1,10 +1,10 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools"> <!-- Screen views ko visually map kiya gaya hai is XML line ke rules se -->
     <!-- Base application theme. -->
-    <style name="Base.Theme.Sizgro" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/accent</item>
-        <item name="android:statusBarColor">@color/accent</item>
-        <item name="android:windowBackground">@color/surface</item>
-    </style>
+    <style name="Base.Theme.Sizgro" parent="Theme.Material3.DayNight.NoActionBar"> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+        <item name="colorPrimary">@color/accent</item> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+        <item name="android:statusBarColor">@color/accent</item> <!-- App resources ko layout rendering system me utilize karne ka structure is attribute me maujood hai -->
+        <item name="android:windowBackground">@color/surface</item> <!-- App ki presentation layer (UI module) ka view element configuration complete kar raha hai -->
+    </style> <!-- Ye tag application ki screen ka koi element ya container represent karta hai -->
 
-    <style name="Theme.Sizgro" parent="Base.Theme.Sizgro" />
-</resources>
+    <style name="Theme.Sizgro" parent="Base.Theme.Sizgro" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
+</resources> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@drawable/ic_launcher_background" />
-    <foreground android:drawable="@drawable/ic_launcher_foreground" />
-    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
-</adaptive-icon>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
+    <background android:drawable="@drawable/ic_launcher_background" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
+    <foreground android:drawable="@drawable/ic_launcher_foreground" /> <!-- User interface hierarchy ka ek part yahan par build aur screen pe link kiya ja raha hai -->
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" /> <!-- Ye layout tag application UI ka ek visual component define kar raha hai -->
+</adaptive-icon> <!-- XML attribute ya element ko configure karke user interface mein design parameters set kiye ja rahe hain -->
